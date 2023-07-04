@@ -59,6 +59,137 @@ main {
     padding: 0 50px; 
 }
 
+.search-group {
+    margin-top: 1.875rem;
+}
+
+.search-group h2 {
+    margin: 0;
+}
+
+.search-group p {
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 2.1875rem;
+    height: 3.0625rem;
+    width: 23.5625rem;
+    border: .0625rem;
+    border-radius: .9375rem;
+    background-color: var(--main-bg-color);
+}
+
+.search-bar label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: .0625rem;
+}
+
+.fa-location-dot {
+    color: #000000;
+}
+
+.search-bar input {
+    border: .0625rem;
+    border-style: solid;
+    border-color: var(--main-bg-color);
+    outline: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.search-bar button {
+    border: .0625rem;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 0 .9375rem .9375rem 0;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filters {
+    display: flex;
+    gap: .9375rem;
+    padding-top: 2.1875rem;
+    align-items: center;
+    height: 3.125rem;
+}
+
+.filters p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin: unset;
+}
+
+.filter-btn {
+    padding: .25rem 1.1875rem;
+    height: 2.625rem;
+    border-color: var(--main-bg-color);
+    border-style: solid;
+    background-color: #ffffff;
+    border-radius: 1.5625rem;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filter-btn:focus {
+    background-color: var(--filter-bg-color);
+}
+
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
+.fa-fire {
+    margin-right: .625rem;
+    width: 22px;
+    height: 22px;
+}
+
+.info-filter {
+    display: flex;
+    gap: .625rem;
+}
+
+.info-filter p {
+    display: flex;
+    margin: unset;
+    align-items: center;
+}
+
+.info-filter p,
+.fa-info {
+    margin-top: 2.1875rem;
+    margin-bottom: 2.1875rem;
+}
+
+.fa-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
