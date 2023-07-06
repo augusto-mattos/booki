@@ -27,7 +27,7 @@ header {
 .logo-en-tete {
     height: 1.1875rem;
     width: 3.8125rem;
-    padding: 1.875rem;
+    padding: 30px;
 }
 
 nav {
@@ -35,9 +35,9 @@ nav {
 }
 
 a {
-    padding-top: 1.25rem;
-    margin-left: 2.125rem;
-    margin-right: 2.125rem;
+    padding-top: 20px;
+    margin-left: 34px;
+    margin-right: 34px;
     text-decoration: none;
     color: #000000;
 }
@@ -45,7 +45,7 @@ a {
 a:hover {
     border-top: 0.125rem solid var(--main-color);
     color: var(--main-color);
-    padding-top: 1.125rem;
+    padding-top: 18px;
 }
 
 .main-container {
@@ -63,7 +63,7 @@ main {
 }
 
 .search-group {
-    margin-top: 1.875rem;
+    margin-top: 30px;
 }
 
 .search-group h2 {
@@ -71,13 +71,13 @@ main {
 }
 
 .search-group p {
-    margin-top: .5rem;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
 .search-bar {
     display: flex;
-    margin-top: 2.1875rem;
+    margin-top: 35px;
     height: 3.0625rem;
     width: 23.5625rem;
     border: .0625rem;
@@ -91,8 +91,8 @@ main {
     align-items: center;
     width: 50px;
     height: 50px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
     border: .0625rem;
 }
 
@@ -105,8 +105,8 @@ main {
     border-style: solid;
     border-color: var(--main-bg-color);
     outline: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -119,16 +119,16 @@ main {
     background-color: var(--main-color);
     border-radius: 0 .9375rem .9375rem 0;
     color: #ffffff;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 18px;
     font-weight: 700;
 }
 
 .filters {
     display: flex;
-    gap: .9375rem;
-    padding-top: 2.1875rem;
+    gap: 15px;
+    padding-top: 35px;
     align-items: center;
     height: 3.125rem;
 }
@@ -141,7 +141,7 @@ main {
 }
 
 .filter-btn {
-    padding: .25rem 1.1875rem;
+    padding: 4px 19px;
     height: 2.625rem;
     border-color: var(--main-bg-color);
     border-style: solid;
@@ -160,14 +160,14 @@ main {
 .fa-person,
 .fa-heart,
 .fa-fire {
-    margin-right: .625rem;
+    margin-right: 10px;
     width: 22px;
     height: 22px;
 }
 
 .info-filter {
     display: flex;
-    gap: .625rem;
+    gap: 10px;
 }
 
 .info-filter p {
@@ -178,7 +178,7 @@ main {
 
 .info-filter p,
 .fa-info {
-    margin-top: 2.1875rem;
+    margin-top: 35px;
 }
 
 .fa-info {
@@ -395,7 +395,7 @@ main {
     align-self: stretch;
 }
 
-.footer div h4{
+.footer div h4 {
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
@@ -412,6 +412,12 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.footer a:hover {
+    border: none;
+    padding: none;
+    text-decoration: var(--main-color);
 }
 
 footer {
