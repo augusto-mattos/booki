@@ -16,13 +16,47 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-en-tete {
+    height: 1.1875rem;
+    width: 3.8125rem;
+    padding: 1.875rem;
+}
+
+nav {
+    display: flex;
+}
+
+a {
+    padding-top: 1.25rem;
+    margin-left: 2.125rem;
+    margin-right: 2.125rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:focus {
+    border-top: 0.125rem solid var(--main-color);
+    color: var(--main-color);
+    padding-top: 1.125rem;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    /* padding: 0 50px;  J'enlève le padding du .main-container et je le remets juste en-dessous dans la balise "main" pour pouvoir organiser l'en-tête selon la maquette fournie */
     box-sizing: border-box;
+}
+
+main {
+    padding: 0 50px; 
 }
 
 .section-title {
