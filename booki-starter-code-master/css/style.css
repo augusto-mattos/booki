@@ -56,6 +56,9 @@ a:hover {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     padding: 0 50px; 
 }
 
@@ -176,7 +179,6 @@ main {
 .info-filter p,
 .fa-info {
     margin-top: 2.1875rem;
-    margin-bottom: 2.1875rem;
 }
 
 .fa-info {
@@ -344,6 +346,36 @@ main {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activites {
+    padding: 30px;
+}
+
+.activites-title {
+    margin-bottom: 30px;
+}
+
+.activites-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.activites-cards .card {
+    width: 25%;
+    padding: unset;
+}
+
+.activites-cards img {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 439px;
+    width: 100%;
+}
+
+.activites .card-title {
+    margin: 19px;
+}
 
 
 
