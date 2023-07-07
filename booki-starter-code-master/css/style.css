@@ -30,8 +30,9 @@ header {
     padding: 30px;
 }
 
-nav {
+nav ul {
     display: flex;
+    list-style: none;
 }
 
 a {
@@ -45,13 +46,12 @@ a {
 a:hover {
     border-top: 0.125rem solid var(--main-color);
     color: var(--main-color);
-    padding-top: 18px;
+    padding-top: 14px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    /* padding: 0 50px;  J'enlève le padding du .main-container et je le remets juste en-dessous dans la balise "main" pour pouvoir organiser l'en-tête selon la maquette fournie */
     box-sizing: border-box;
 }
 
@@ -216,10 +216,6 @@ main {
     font-weight: 700;
 }
 
-/* .neutralStar {
-    color: var(--main-bg-color)
-} CETTE CLASS N'EST PAS UTILISEE - à supprimer */
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -301,6 +297,11 @@ main {
     line-height: normal;
 }
 
+.lien-plus a:hover {
+    border-top: none;
+    color: #000000;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -378,25 +379,28 @@ main {
 }
 
 /* FOOTER */
+footer {
+    margin-top: 35px;
+}
+
 .footer {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: var(--main-bg-color);
 }
 
 .footer div {
     padding: 20px;
     display: flex;
-    margin: unset;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    flex: 1 0 0;
     align-self: stretch;
 }
 
 .footer div h4 {
-    font-family: Raleway;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -404,10 +408,22 @@ main {
     margin: unset;
 }
 
+.footer div ul {
+    list-style: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .footer div a {
     margin: unset;
     padding: unset;
-    font-family: Raleway;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -420,9 +436,9 @@ main {
     text-decoration: var(--main-color);
 }
 
-footer {
-    background-color: var(--main-bg-color);
+.margin-footer {
     height: 60.5px;
+    background-color: var(--main-bg-color);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

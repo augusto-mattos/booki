@@ -19,8 +19,14 @@
         <header>
             <img class="logo-en-tete" src="./images/logo/Booki.png" alt="Logo Booki">
             <nav>
-                <a href="#hebergements-marseille">Hébergements</a>
-                <a href="#activites-marseille">Activités</a>
+                <ul>
+                    <li>
+                        <a href="#hebergements-marseille">Hébergements</a>
+                    </li>
+                    <li>
+                        <a href="#activites-marseille">Activités</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -29,11 +35,11 @@
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div class="search-bar">
+                <form class="search-bar">
                     <label for="localisation"><i class="fa-lg fa-solid fa-location-dot"></i></label>
                     <input type="text" name="localisation" placeholder="Tapez le nom de la ville" />
                     <button>Rechercher</button>
-                </div>
+                </form>
                 <div class="filters">
                     <p>
                         Filtres
@@ -271,26 +277,47 @@
                     </article>
                 </div>
             </div>
+        </main>
+        <footer>
             <div class="footer">
                 <div>
                     <h4>À propos</h4>
-                    <a href="#">Fonctionnement du site</a>
-                    <a href="#">Conditions générales</a>
-                    <a href="#">Données et confidantialité</a>
+                    <ul>
+                        <li>
+                            <a href="#">Fonctionnement du site</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions générales</a>
+                        </li>
+                        <li>
+                            <a href="#">Données et confidantialité</a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <h4>Nos hébergements</h4>
-                    <a href="#">Charte qualité</a>
-                    <a href="#">Proposer votre hotel</a>
+                    <ul>
+                        <li>
+                            <a href="#">Charte qualité</a>
+                        </li>
+                        <li>
+                            <a href="#">Proposer votre hotel</a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <h4>Assistance</h4>
-                    <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>
+                    <ul>
+                        <li>
+                            <a href="#">Centre d'aide</a>
+                        </li>
+                        <li>
+                            <a href="#">Nous contacter</a>
+                        </li>
+                    </ul>
                 </div>  
             </div>
-        </main>
-        <footer>
+            <div class="margin-footer"></div>
         </footer>
     </div>
 </body>
