@@ -35,7 +35,7 @@ nav ul {
     list-style: none;
 }
 
-a {
+nav ul a {
     padding-top: 20px;
     margin-left: 34px;
     margin-right: 34px;
@@ -43,7 +43,7 @@ a {
     color: #000000;
 }
 
-a:hover {
+nav ul a:hover {
     border-top: 0.125rem solid var(--main-color);
     color: var(--main-color);
     padding-top: 14px;
@@ -198,10 +198,17 @@ main {
 }
 
 .card {
+    margin: unset;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    text-decoration: none;
+    color: #000000;
+}
+
+.card a:hover {
+    text-decoration: none;
 }
 
 .card img {
@@ -247,7 +254,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 28.4%;
-    height: 192px;
     padding-bottom: 15px;
 }
 
@@ -291,10 +297,13 @@ main {
 .lien-plus a {
     margin-top: 30px;
     margin-bottom: unset;
+    margin-right: 34px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-decoration: none;
+    color: #000000;
 }
 
 .lien-plus a:hover {
@@ -422,12 +431,14 @@ footer {
 }
 
 .footer div a {
-    margin: unset;
+    margin-right: 34px;
     padding: unset;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
+    color: #000000;
 }
 
 .footer a:hover {
