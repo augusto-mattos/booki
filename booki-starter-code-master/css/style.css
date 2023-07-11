@@ -141,6 +141,10 @@ main {
 }
 
 .filter-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     padding: 4px 19px;
     height: 2.625rem;
     border-color: var(--main-bg-color);
@@ -160,7 +164,9 @@ main {
 .fa-person,
 .fa-heart,
 .fa-fire {
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 22px;
     height: 22px;
 }
@@ -215,10 +221,6 @@ main {
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-}
-
 .euro {
     font-weight: 700;
 }
@@ -258,7 +260,7 @@ main {
 }
 
 .hebergements-cards img {
-    object-fit: cover;
+    /* object-fit: cover; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 124px;
@@ -276,6 +278,7 @@ main {
 }
 
 .hebergements-cards .card-title {
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 4px;
 }
@@ -344,6 +347,7 @@ main {
 }
 
 .populaires-cards .card-title {
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 4px;
 }
@@ -376,7 +380,7 @@ main {
 }
 
 .activites-cards img {
-    object-fit: cover;
+    /* object-fit: cover; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 439px;
@@ -384,6 +388,7 @@ main {
 }
 
 .activites .card-title {
+    font-size: 16px;
     margin: 19px;
 }
 
@@ -457,6 +462,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter-btn {
+        padding: 4px 12px;
+        font-size: 16px;
+        /* contrairement à ce qui était présenté sur la maquette tablette, j'ai dû réduire le padding left et right pour que le texte ne se casse en pas en deux lignes et garde la même apparence que les autres boutons */
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -480,12 +491,34 @@ footer {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .hebergements-cards .card-title,
+    .populaires-cards .card-title,
+    .activites-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .hebergements-cards .card-subtitle,
+    .populaires-cards .card-subtitle,
+    .activites-cards .card-subtitle {
         font-size: 13px;
+    }
+    
+    .activites-cards img {
+        height: 200px;
+    }
+
+    .footer div {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0;
+    }
+
+    .margin-footer {
+        height: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: var(--main-bg-color);
     }
 }
 
