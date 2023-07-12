@@ -648,6 +648,12 @@ footer {
         padding-top: 35px;
     }
 
+    .hebergements-cards .card-title, 
+    .populaires-cards .card-title, 
+    .activites-cards .card-title {
+        font-size: 16px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -689,6 +695,34 @@ footer {
     .hebergements-cards .card {
         width: 100%;
         box-sizing: border-box;
-        padding-top: 0;
+        border: 20px;
+    }
+
+    .activites-cards {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        gap: 15px;
+    }
+
+    .activites-cards .card {
+        width: 100%;
+        box-sizing: border-box;
+        border: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 35px;
+    }
+
+    .margin-footer {
+        margin: unset;
+        padding-bottom: 30px;
     }
 }
