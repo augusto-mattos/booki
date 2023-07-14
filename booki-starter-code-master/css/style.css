@@ -66,7 +66,7 @@ main {
     margin-top: 30px;
 }
 
-.search-group h2 {
+.search-group h1 {
     margin: 0;
 }
 
@@ -421,7 +421,7 @@ footer {
     align-self: stretch;
 }
 
-.footer div h4 {
+.footer div h3 {
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -574,7 +574,7 @@ footer {
         padding-right: 20px; 
     }
 
-    .search-group h2 {
+    .search-group h1 {
         font-size: 22px;
         margin: 0;
     }
