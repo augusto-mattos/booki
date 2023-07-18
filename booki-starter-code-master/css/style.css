@@ -267,9 +267,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* justify-content: center;
-    gap: 30px;
-    margin-top: 30px; */
     margin-bottom: 30px;
 }
 
@@ -473,6 +470,12 @@ footer {
         font-size: 16px;
         /* contrairement à ce qui était présenté sur la maquette tablette, j'ai dû réduire le padding left et right pour que le texte ne se casse en pas en deux lignes et garde la même apparence que les autres boutons */
     }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 35px;
+    }
     
     .hebergements-and-populaires {
         flex-direction: column;
@@ -595,10 +598,13 @@ footer {
         border-radius: 0.9375rem 0 0 0.9375rem;
     }
 
-    .search-bar label,
-    .search-bar input {
+    .search-bar label {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .search-bar input {
+        font-size: 16px;
     }
 
     .search-bar button .btn-desktop {
@@ -613,24 +619,16 @@ footer {
         color: #ffffff;
     }
 
-    .filters {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 35px;
-    }
-
     .filters div {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
     }
 
     .filter-btn {
         display: flex;
         justify-content: flex-start;
-        width: 160px;
-        padding-left: 19px;
-        padding-right: 19px;
+        gap: 10px;
         font-size: 14px;
     }
 
