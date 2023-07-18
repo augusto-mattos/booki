@@ -90,8 +90,8 @@ main {
     align-items: center;
     width: 50px;
     height: 50px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
     border: .0625rem;
     background-color: var(--main-bg-color);
     border-radius: .9375rem 0 0 .9375rem;
@@ -106,8 +106,10 @@ main {
     border-style: solid;
     border-color: var(--main-bg-color);
     outline: 0;
-    padding-left: 24px;
-    padding-right: 24px;
+    border-left-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right-width: 0px;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -122,6 +124,8 @@ main {
     color: #ffffff;
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 18px;
     font-weight: 700;
 }
@@ -262,9 +266,10 @@ main {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    /* justify-content: center;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 30px; */
     margin-bottom: 30px;
 }
 
@@ -272,6 +277,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 28.4%;
+    margin-top: 30px;
     padding-bottom: 15px;
 }
 
@@ -680,6 +686,7 @@ footer {
         width: 100%;
         box-sizing: border-box;
         border: 20px;
+        margin-top: 0;
     }
 
     .activites-cards {
