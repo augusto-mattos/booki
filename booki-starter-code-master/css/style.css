@@ -171,7 +171,7 @@ main {
     font-weight: 700;
 }
 
-.filter-btn:focus {
+.filter-btn:hover {
     background-color: var(--filter-bg-color);
 }
 
@@ -553,6 +553,7 @@ footer {
 
     nav ul li {
         padding-bottom: 15px;
+        border-bottom: 0.125rem solid var(--main-bg-color);
         width: 50%;
         text-align: center;
     }
